@@ -93,7 +93,8 @@ header img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(mecanica.png);
+    background:#3C4F65;
+    /* background-image: url(mecanica.png); */
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-image 0.5s ease-in-out;
