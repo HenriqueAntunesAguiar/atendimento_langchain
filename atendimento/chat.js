@@ -6,13 +6,13 @@ const chat__mensages__mensages = document.getElementsByClassName('chat__mensages
 const user_mensages_lava_jato = ['Bom dia!', 'Henrique', 'Agendar um serviço', 'Audi A3', 'Gostaria de uma lavagem simples',
      'Teria horário para amanha? Tenho que levar meu filho no médico hoje.', 'Ficaria bom para mim as 16', 'Por gentileza!']
 
-const bot_mensages_lava_jato = ['Olá! Bom dia! Para começarmos, qual é o seu nome? 😊',
-    'Olá, Henrique! 😊 Em que posso te ajudar hoje? Você gostaria de agendar um serviço ou saber mais sobre o que oferecemos?',
-    'Perfeito, Henrique! 😉 Para agendarmos, qual é o modelo do seu carro?',
-    'Entendido! 😊 Temos algumas opções de serviços para o seu Audi A3 *   **Lavagem Simples:** R$ 30,00 *   **Lavagem Detalhada:** R$ 50,00 *   **Lavagem Completa:** R$ 70,00 Qual serviço você gostaria de agendar? 😉 E qual seria a melhor data e horário para você?',
-    ' Ok, Henrique! 😉 Qual data e horário você prefere para agendar a lavagem simples do seu Audi A3?',
-    'Entendo, Henrique! 😊 Para amanhã, terça-feira, 10/06/2025, temos os seguintes horários disponíveis para a lavagem simples do seu Audi A3:*   10:00 - 11:00 *   13:00 - 14:00 *   15:00 - 16:00 Qual horário fica melhor para você? 😉',
-    'Perfeito, Henrique! 😊 Então, para confirmar: *   Nome: Henrique *   Carro: Audi A3 *   Serviço: Lavagem Simples *   Data e Horário: Terça-feira, 10/06/2025, às 16:00 Podemos confirmar o agendamento? 😉',
+const bot_mensages_lava_jato = ['Olá! Bom dia!<br>Para começarmos, qual é o seu nome? 😊',
+    'Olá, Henrique! 😊<br>Em que posso te ajudar hoje?<br>Você gostaria de agendar um serviço ou saber mais sobre o que oferecemos?',
+    'Perfeito, Henrique! 😉<br>Para agendarmos, qual é o modelo do seu carro?',
+    'Entendido! 😊<br>Temos algumas opções de serviços para o seu Audi A3 <br><br>Lavagem Simples: R$ 30,00 <br>Lavagem Detalhada: R$ 50,00<br>Lavagem Completa: R$ 70,00<br><br>Qual serviço você gostaria de agendar? 😉<br>E qual seria a melhor data e horário para você?',
+    ' Ok, Henrique! 😉<br>Qual data e horário você prefere para agendar a lavagem simples do seu Audi A3?',
+    'Entendo, Henrique! 😊<br>Para amanhã, terça-feira, 10/06/2025, temos os seguintes horários disponíveis para a lavagem simples do seu Audi A3:<br><br>10:00 - 11:00<br>13:00 - 14:00<br>15:00 - 16:00<br><br>Qual horário fica melhor para você? 😉',
+    'Perfeito, Henrique! 😊<br>Então, para confirmar:<br><br>*   Nome: Henrique<br>*   Carro: Audi A3 <br>*   Serviço: Lavagem Simples <br>*   Data e Horário: Terça-feira, 10/06/2025, às 16:00<br><br>Podemos confirmar o agendamento? 😉',
     'Agendamento confirmado, Henrique! 😊 Agradecemos a preferência! 😉']
 
 function Mecanico(){
@@ -58,7 +58,7 @@ function MensagemBot(text_content){
     div.classList.add('mensage_bot', 'mensage');
 
     const span = document.createElement('span');
-    span.textContent = text_content;
+    span.innerHTML  = text_content;
     div.appendChild(span);
     chat__mensages__mensages.appendChild(div);
 
@@ -70,7 +70,7 @@ function MensagemUser(text_content){
     div.classList.add('mensage_user', 'mensage');
 
     const span = document.createElement('span');
-    span.textContent = text_content;
+    span.innerHTML  = text_content;
     div.appendChild(span);
     chat__mensages__mensages.appendChild(div);
 
