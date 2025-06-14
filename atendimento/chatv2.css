@@ -197,6 +197,8 @@ header img{
 .chat__mensages__mensages{
     height: 76%;
     width: 100%;
+    overflow-y: scroll;
+    margin-bottom: 1%;
 }
 .mensage{
     margin-top: 3%;
